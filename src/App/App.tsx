@@ -1,44 +1,38 @@
 import React, { Component } from 'react';
-import './App.css';
+import { bindActionCreators, Dispatch } from 'redux';
+import { connect } from 'react-redux';
+import { addProduct } from '../Store';
 import { Product, ProductProps } from '../Product';
+import './App.css';
 
-interface AppProps {}
+type AppProps = AppStateProps & AppDispatchProps;
 
-interface AppState {
+interface AppDispatchProps {
+  addProduct: typeof addProduct;
+}
+
+export interface AppStateProps {
   products: ProductProps[];
 }
 
-export class App extends Component<AppProps, AppState> {
+class App extends Component<AppProps> {
   constructor(props: AppProps) {
     super(props);
-
-    this.state = {
-      products: [
-        { name: 'White t-shirt', price: 30.2 },
-        { name: 'Red socks', price: 10.7 },
-        { name: 'Brown trousers', price: 55.1 },
-        { name: 'Black jacket', price: 155.9 },
-      ],
-    };
   }
 
-  private addProduct = (event: React.MouseEvent) => {
+  private addProduct =  (event: React.MouseEvent) => {
     event.preventDefault();
-    this.setState(prevState => ({
-      products: [...prevState.products, { name: 'bunny', price: 12.2 }],
-    }));
+    this.props.addProduct({ name: 'Motorcycle', price: 12000.5 });
   };
 
-  render() {
+  public render = () => {
     return (
       <div className="app">
         <header className="app-header container">Welcome to the store!</header>
         <main className="main container">
           <h1 className="product-title">Products</h1>
           <ol className="product-list">
-            {this.state.products.map(({ name, price }) => (
-              <Product name={name} price={price} />
-            ))}
+            {this.props.products.map(({ name, price }) => <Product name={name} price={price} />)}
           </ol>
         </main>
 
@@ -51,3 +45,21 @@ export class App extends Component<AppProps, AppState> {
     );
   }
 }
+
+const mapStateToProps = (state: any): AppStateProps => {
+  return { products: state.products };
+};
+
+const mapDispatchToProps = (dispatch: Dispatch): AppDispatchProps => ({
+  ...bindActionCreators(
+    {
+      addProduct,
+    },
+    dispatch
+  ),
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
