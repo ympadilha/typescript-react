@@ -1,0 +1,354 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header
+          className="app-header"
+        >
+          Welcome to the store!
+        </header>,
+        <main
+          className="main container"
+        >
+          <h1>
+            Products
+          </h1>
+          <ol>
+            <Product
+              name="White t-shirt"
+              price={30.2}
+            />
+            <Product
+              name="Red socks"
+              price={10.7}
+            />
+            <Product
+              name="Brown trousers"
+              price={55.1}
+            />
+          </ol>
+        </main>,
+      ],
+      "className": "app",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Welcome to the store!",
+          "className": "app-header",
+        },
+        "ref": null,
+        "rendered": "Welcome to the store!",
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Products
+            </h1>,
+            <ol>
+              <Product
+                name="White t-shirt"
+                price={30.2}
+              />
+              <Product
+                name="Red socks"
+                price={10.7}
+              />
+              <Product
+                name="Brown trousers"
+                price={55.1}
+              />
+            </ol>,
+          ],
+          "className": "main container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Products",
+            },
+            "ref": null,
+            "rendered": "Products",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Product
+                  name="White t-shirt"
+                  price={30.2}
+                />,
+                <Product
+                  name="Red socks"
+                  price={10.7}
+                />,
+                <Product
+                  name="Brown trousers"
+                  price={55.1}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "name": "White t-shirt",
+                  "price": 30.2,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "name": "Red socks",
+                  "price": 10.7,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "name": "Brown trousers",
+                  "price": 55.1,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "ol",
+          },
+        ],
+        "type": "main",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className="app-header"
+          >
+            Welcome to the store!
+          </header>,
+          <main
+            className="main container"
+          >
+            <h1>
+              Products
+            </h1>
+            <ol>
+              <Product
+                name="White t-shirt"
+                price={30.2}
+              />
+              <Product
+                name="Red socks"
+                price={10.7}
+              />
+              <Product
+                name="Brown trousers"
+                price={55.1}
+              />
+            </ol>
+          </main>,
+        ],
+        "className": "app",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Welcome to the store!",
+            "className": "app-header",
+          },
+          "ref": null,
+          "rendered": "Welcome to the store!",
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                Products
+              </h1>,
+              <ol>
+                <Product
+                  name="White t-shirt"
+                  price={30.2}
+                />
+                <Product
+                  name="Red socks"
+                  price={10.7}
+                />
+                <Product
+                  name="Brown trousers"
+                  price={55.1}
+                />
+              </ol>,
+            ],
+            "className": "main container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Products",
+              },
+              "ref": null,
+              "rendered": "Products",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Product
+                    name="White t-shirt"
+                    price={30.2}
+                  />,
+                  <Product
+                    name="Red socks"
+                    price={10.7}
+                  />,
+                  <Product
+                    name="Brown trousers"
+                    price={55.1}
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "name": "White t-shirt",
+                    "price": 30.2,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "name": "Red socks",
+                    "price": 10.7,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "name": "Brown trousers",
+                    "price": 55.1,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "ol",
+            },
+          ],
+          "type": "main",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
