@@ -25,10 +25,10 @@ export class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div className="app">
-        <header className="app-header">Welcome to the store!</header>
+        <header className="app-header container">Welcome to the store!</header>
         <main className="main container">
-          <h1>Products</h1>
-          <ol>
+          <h1 className="product-title">Products</h1>
+          <ol className="product-list">
             {this.state.products.map(({ name, price }) => (
               <Product name={name} price={price} />
             ))}
