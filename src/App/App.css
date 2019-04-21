@@ -9,6 +9,7 @@ body {
 
 .app-header {
   font-size: 26px;
+  margin-top: 50px;
 }
 
 .main {
@@ -22,4 +23,8 @@ body {
 
 .product-list {
   display: flex;
+}
+
+.footer {
+  margin-top: 50px;
 }

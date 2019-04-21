@@ -22,6 +22,13 @@ export class App extends Component<AppProps, AppState> {
     };
   }
 
+  private addProduct = (event: React.MouseEvent) => {
+    event.preventDefault();
+    this.setState(prevState => ({
+      products: [...prevState.products, { name: 'bunny', price: 12.2 }],
+    }));
+  };
+
   render() {
     return (
       <div className="app">
@@ -34,6 +41,12 @@ export class App extends Component<AppProps, AppState> {
             ))}
           </ol>
         </main>
+
+        <footer className="container footer">
+          <button className="button" onClick={this.addProduct}>
+            Add product
+          </button>
+        </footer>
       </div>
     );
   }
